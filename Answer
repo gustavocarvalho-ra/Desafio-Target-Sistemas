@@ -27,3 +27,37 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+2-
+function countAOccurrences(str) {
+    let count = 0;
+
+    for (let char of str.toLowerCase()) {
+        if (char === 'a') {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function main() {
+    let inputString = prompt("Digite uma string para verificar a quantidade de letras 'a':");
+    
+    if (inputString !== null) {
+        let count = countAOccurrences(inputString);
+        
+        if (count > 0) {
+            console.log(`A letra 'a' (maiúscula ou minúscula) aparece ${count} vez(es) na string.`);
+        } else {
+            console.log("A letra 'a' não aparece na string.");
+        }
+    } else {
+        console.log("Entrada inválida.");
+    }
+}
+
+main();
+
+
+3-
